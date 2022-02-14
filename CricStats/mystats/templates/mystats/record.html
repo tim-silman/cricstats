@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <thead>
+        <tr>
+            <td>Player</td>
+            <td>Runs</td>
+            <td>100s</td>
+            <td>Average</td>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>test</td>
+    </tr>
+    {% for player in top_5 %}
+        <tr>
+            <td>{{player['Name']}</td>
+            <td>{{player['Runs']}}</td>
+            <td>{{player['100']}}</td>
+            <td>{{player['Ave']}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+
+</body>
+</html>

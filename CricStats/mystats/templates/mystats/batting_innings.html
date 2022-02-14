@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>Runs</td>
+        <td>Not out</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for innings in innings_list %}
+        <tr>
+            <td>{{innings.Runs}}</td>
+            <td>{{innings.not_out}}</td>
+        </tr>
+    {% endfor %}
+
+
+    </tbody>
+
+</table>
+</body>
+</html>
